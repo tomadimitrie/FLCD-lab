@@ -1,0 +1,7 @@
+var a: Int = read()
+var b: Int = read()
+var max: Int = a
+if b > a {
+    max = b
+}
+write(max)

@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E257B1C629095198006AC3ED /* PIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = E257B1C529095198006AC3ED /* PIF.swift */; };
+		E257B1C8290955F1006AC3ED /* LanguageSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = E257B1C7290955F1006AC3ED /* LanguageSpecification.swift */; };
+		E257B1CC29095BEE006AC3ED /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E257B1CB29095BEE006AC3ED /* Scanner.swift */; };
 		E2B7467F290017DA008FA211 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B7467E290017DA008FA211 /* main.swift */; };
+		E2E6E6A32911E41600F63B4A /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E6E6A22911E41600F63B4A /* utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +27,30 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E257B1C529095198006AC3ED /* PIF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIF.swift; sourceTree = "<group>"; };
+		E257B1C7290955F1006AC3ED /* LanguageSpecification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSpecification.swift; sourceTree = "<group>"; };
+		E257B1CA29095B50006AC3ED /* p1.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = p1.txt; sourceTree = "<group>"; };
+		E257B1CB29095BEE006AC3ED /* Scanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scanner.swift; sourceTree = "<group>"; };
+		E257B1E62911D4F4006AC3ED /* tokens.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = tokens.txt; sourceTree = "<group>"; };
 		E2B7467B290017DA008FA211 /* lab2-lftc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "lab2-lftc"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2B7467E290017DA008FA211 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		E2B74685290147F0008FA211 /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		E2E6E69F2911DDF400F63B4A /* p1pif.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = p1pif.txt; sourceTree = "<group>"; };
+		E2E6E6A02911DE4F00F63B4A /* p1identifiers.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = p1identifiers.txt; sourceTree = "<group>"; };
+		E2E6E6A12911DE8B00F63B4A /* p1constants.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = p1constants.txt; sourceTree = "<group>"; };
+		E2E6E6A22911E41600F63B4A /* utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utils.swift; sourceTree = "<group>"; };
+		E2E6E6A42911EB8F00F63B4A /* p1erridentifiers.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = p1erridentifiers.txt; sourceTree = "<group>"; };
+		E2E6E6A52911EB8F00F63B4A /* p1errconstants.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = p1errconstants.txt; sourceTree = "<group>"; };
+		E2E6E6A62911EB8F00F63B4A /* p1err.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = p1err.txt; sourceTree = "<group>"; };
+		E2E6E6A72911EB8F00F63B4A /* p1errpif.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = p1errpif.txt; sourceTree = "<group>"; };
+		E2E6E6A82911EC3900F63B4A /* p2constants.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = p2constants.txt; sourceTree = "<group>"; };
+		E2E6E6A92911EC3900F63B4A /* p2.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = p2.txt; sourceTree = "<group>"; };
+		E2E6E6AA2911EC3900F63B4A /* p2pif.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = p2pif.txt; sourceTree = "<group>"; };
+		E2E6E6AB2911EC3900F63B4A /* p2identifiers.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = p2identifiers.txt; sourceTree = "<group>"; };
+		E2E6E6AC2911ECB300F63B4A /* p3pif.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = p3pif.txt; sourceTree = "<group>"; };
+		E2E6E6AD2911ECB300F63B4A /* p3.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = p3.txt; sourceTree = "<group>"; };
+		E2E6E6AE2911ECB300F63B4A /* p3identifiers.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = p3identifiers.txt; sourceTree = "<group>"; };
+		E2E6E6AF2911ECB300F63B4A /* p3constants.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = p3constants.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +64,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E257B1C429095188006AC3ED /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				E257B1C529095198006AC3ED /* PIF.swift */,
+				E257B1C7290955F1006AC3ED /* LanguageSpecification.swift */,
+				E257B1CB29095BEE006AC3ED /* Scanner.swift */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		E257B1C929095B3D006AC3ED /* test */ = {
+			isa = PBXGroup;
+			children = (
+				E257B1CA29095B50006AC3ED /* p1.txt */,
+				E2E6E69F2911DDF400F63B4A /* p1pif.txt */,
+				E2E6E6A02911DE4F00F63B4A /* p1identifiers.txt */,
+				E2E6E6A12911DE8B00F63B4A /* p1constants.txt */,
+				E2E6E6A62911EB8F00F63B4A /* p1err.txt */,
+				E2E6E6A52911EB8F00F63B4A /* p1errconstants.txt */,
+				E2E6E6A42911EB8F00F63B4A /* p1erridentifiers.txt */,
+				E2E6E6A72911EB8F00F63B4A /* p1errpif.txt */,
+				E2E6E6A92911EC3900F63B4A /* p2.txt */,
+				E2E6E6A82911EC3900F63B4A /* p2constants.txt */,
+				E2E6E6AB2911EC3900F63B4A /* p2identifiers.txt */,
+				E2E6E6AA2911EC3900F63B4A /* p2pif.txt */,
+				E2E6E6AD2911ECB300F63B4A /* p3.txt */,
+				E2E6E6AF2911ECB300F63B4A /* p3constants.txt */,
+				E2E6E6AE2911ECB300F63B4A /* p3identifiers.txt */,
+				E2E6E6AC2911ECB300F63B4A /* p3pif.txt */,
+				E257B1E62911D4F4006AC3ED /* tokens.txt */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
 		E2B74672290017DA008FA211 = {
 			isa = PBXGroup;
 			children = (
@@ -57,9 +117,14 @@
 		E2B7467D290017DA008FA211 /* lab2-lftc */ = {
 			isa = PBXGroup;
 			children = (
+				E257B1C929095B3D006AC3ED /* test */,
+				E257B1C429095188006AC3ED /* domain */,
 				E2B7467E290017DA008FA211 /* main.swift */,
+				E2E6E6A22911E41600F63B4A /* utils.swift */,
+				E2B74685290147F0008FA211 /* README.txt */,
 			);
-			path = "lab2-lftc";
+			name = "lab2-lftc";
+			path = "lab-lftc";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,7 +162,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E2B74676290017DA008FA211 /* Build configuration list for PBXProject "lab2-lftc" */;
+			buildConfigurationList = E2B74676290017DA008FA211 /* Build configuration list for PBXProject "lab-lftc" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -120,7 +185,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2E6E6A32911E41600F63B4A /* utils.swift in Sources */,
 				E2B7467F290017DA008FA211 /* main.swift in Sources */,
+				E257B1C8290955F1006AC3ED /* LanguageSpecification.swift in Sources */,
+				E257B1CC29095BEE006AC3ED /* Scanner.swift in Sources */,
+				E257B1C629095198006AC3ED /* PIF.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +334,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E2B74676290017DA008FA211 /* Build configuration list for PBXProject "lab2-lftc" */ = {
+		E2B74676290017DA008FA211 /* Build configuration list for PBXProject "lab-lftc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E2B74680290017DA008FA211 /* Debug */,

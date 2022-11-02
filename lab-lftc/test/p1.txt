@@ -1,0 +1,7 @@
+var nra: Int = read()
+var anr: Int = 0
+while nr != 0 {
+    anr += 1
+    nr /= 10
+}
+write(nra)

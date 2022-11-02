@@ -1,0 +1,10 @@
+var nr: Int = read()
+var d: Int = 2
+var isPrime: Bool = true
+while d < nr / 2 {
+    if nr % d == 0 {
+        isPrime = false
+    }
+    d += 1
+}
+write(isPrime)

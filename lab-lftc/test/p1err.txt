@@ -1,0 +1,7 @@
+var nr: Int = read()
+var nrDigits$ Int = 3a
+while nr != 0 {
+    nrDigits += 1
+    nr /= 10
+}
+write(nr)

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E24E45A7292DA44500A11734 /* HashTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24E45A6292DA44500A11734 /* HashTable.swift */; };
+		E24E45A9292DA64E00A11734 /* UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24E45A8292DA64E00A11734 /* UI.swift */; };
+		E24E45AE292DA99800A11734 /* FiniteAutomata.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24E45AD292DA99800A11734 /* FiniteAutomata.swift */; };
 		E257B1C629095198006AC3ED /* PIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = E257B1C529095198006AC3ED /* PIF.swift */; };
 		E257B1C8290955F1006AC3ED /* LanguageSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = E257B1C7290955F1006AC3ED /* LanguageSpecification.swift */; };
 		E257B1CC29095BEE006AC3ED /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E257B1CB29095BEE006AC3ED /* Scanner.swift */; };
@@ -27,6 +30,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E24E45A6292DA44500A11734 /* HashTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashTable.swift; sourceTree = "<group>"; };
+		E24E45A8292DA64E00A11734 /* UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UI.swift; sourceTree = "<group>"; };
+		E24E45AA292DA96800A11734 /* fa-identifier.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "fa-identifier.in"; sourceTree = "<group>"; };
+		E24E45AB292DA96800A11734 /* fa-int.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "fa-int.in"; sourceTree = "<group>"; };
+		E24E45AC292DA96800A11734 /* fa-string.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "fa-string.in"; sourceTree = "<group>"; };
+		E24E45AD292DA99800A11734 /* FiniteAutomata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiniteAutomata.swift; sourceTree = "<group>"; };
 		E257B1C529095198006AC3ED /* PIF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIF.swift; sourceTree = "<group>"; };
 		E257B1C7290955F1006AC3ED /* LanguageSpecification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSpecification.swift; sourceTree = "<group>"; };
 		E257B1CA29095B50006AC3ED /* p1.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = p1.txt; sourceTree = "<group>"; };
@@ -67,9 +76,12 @@
 		E257B1C429095188006AC3ED /* domain */ = {
 			isa = PBXGroup;
 			children = (
+				E24E45AD292DA99800A11734 /* FiniteAutomata.swift */,
 				E257B1C529095198006AC3ED /* PIF.swift */,
 				E257B1C7290955F1006AC3ED /* LanguageSpecification.swift */,
 				E257B1CB29095BEE006AC3ED /* Scanner.swift */,
+				E24E45A6292DA44500A11734 /* HashTable.swift */,
+				E24E45A8292DA64E00A11734 /* UI.swift */,
 			);
 			path = domain;
 			sourceTree = "<group>";
@@ -77,6 +89,9 @@
 		E257B1C929095B3D006AC3ED /* test */ = {
 			isa = PBXGroup;
 			children = (
+				E24E45AA292DA96800A11734 /* fa-identifier.in */,
+				E24E45AB292DA96800A11734 /* fa-int.in */,
+				E24E45AC292DA96800A11734 /* fa-string.in */,
 				E257B1CA29095B50006AC3ED /* p1.txt */,
 				E2E6E69F2911DDF400F63B4A /* p1pif.txt */,
 				E2E6E6A02911DE4F00F63B4A /* p1identifiers.txt */,
@@ -186,7 +201,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2E6E6A32911E41600F63B4A /* utils.swift in Sources */,
+				E24E45A9292DA64E00A11734 /* UI.swift in Sources */,
+				E24E45AE292DA99800A11734 /* FiniteAutomata.swift in Sources */,
 				E2B7467F290017DA008FA211 /* main.swift in Sources */,
+				E24E45A7292DA44500A11734 /* HashTable.swift in Sources */,
 				E257B1C8290955F1006AC3ED /* LanguageSpecification.swift in Sources */,
 				E257B1CC29095BEE006AC3ED /* Scanner.swift in Sources */,
 				E257B1C629095198006AC3ED /* PIF.swift in Sources */,
@@ -315,6 +333,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7M3E2N6MMD;
 				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -326,6 +345,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7M3E2N6MMD;
 				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};

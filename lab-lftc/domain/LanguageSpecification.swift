@@ -6,8 +6,16 @@ class LanguageSpecification {
     let separators: [String]
     let whitespace: [String]
     
+    let stringFA: FiniteAutomata
+    let intFA: FiniteAutomata
+    let identifierFA: FiniteAutomata
+    
     init() {
-        let contents = try! String(contentsOfFile: "/Users/toma/Desktop/lab2/lab-lftc/test/tokens.txt")
+        stringFA = FiniteAutomata(file: "/Users/toma/Desktop/FLCD-lab/lab-lftc/test/fa-string.in")
+        intFA = FiniteAutomata(file: "/Users/toma/Desktop/FLCD-lab/lab-lftc/test/fa-int.in")
+        identifierFA = FiniteAutomata(file: "/Users/toma/Desktop/FLCD-lab/lab-lftc/test/fa-identifier.in")
+        
+        let contents = try! String(contentsOfFile: "/Users/toma/Desktop/FLCD-lab/lab-lftc/test/tokens.txt")
         let batches = contents
             .components(separatedBy: "---")
             .map {
@@ -40,7 +48,7 @@ class LanguageSpecification {
     }
     
     func isIdentifier(_ token: String) -> Bool {
-        return token.matches(#"^[a-zA-Z]([a-z|A-Z|0-9|_])*$"#) && !self.isKeyword(token)
+        return identifierFA.isAccepted(sequence: token) && !self.isKeyword(token)
     }
     
     func isWhitespace(_ token: String) -> Bool {
@@ -48,30 +56,18 @@ class LanguageSpecification {
     }
     
     func isString(_ token: String) -> Bool {
-        return token.matches(#"^"[a-zA-Z0-9!@#$%^&*()-=_+{}\[\]:;"'|\\<,>.?\/~`]*"$"#)
-    }
-    
-    func isChar(_ token: String) -> Bool {
-        return token.matches(#"^'[a-zA-Z0-9!@#$%^&*()-=_+{}\[\]:;"'|\\<,>.?\/~`]'$"#)
+        return stringFA.isAccepted(sequence: token)
     }
     
     func isDecimalNumber(_ token: String) -> Bool {
-        return token.matches(#"^0|(\+|-)?[1-9][0-9]*$"#)
-    }
-    
-    func isHexNumber(_ token: String) -> Bool {
-        return token.matches(#"^0x0|(\+|-)?0x[1-9a-fA-F][0-9a-fA-F]*$"#)
-    }
-    
-    func isOctalNumber(_ token: String) -> Bool {
-        return token.matches(#"^0o0|(\+|-)?0o[1-7][0-7]*$"#)
+        return intFA.isAccepted(sequence: token)
     }
     
     func isNumber(_ token: String) -> Bool {
-        return self.isDecimalNumber(token) || self.isHexNumber(token) || self.isOctalNumber(token)
+        return self.isDecimalNumber(token)
     }
     
     func isConstant(_ token: String) -> Bool {
-        return self.isString(token) || self.isChar(token) || self.isNumber(token)
+        return self.isString(token) || self.isNumber(token)
     }
 }
